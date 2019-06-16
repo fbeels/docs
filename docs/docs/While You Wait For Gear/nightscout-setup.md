@@ -21,9 +21,9 @@ your data, customized watchfaces with your OpenAPS data, and integration with IF
 
 ## Nightscout Setup with Heroku
 
-* If you plan to use Nightscout with OpenAPS, we recommend using Heroku, as OpenAPS can reach the usage limits of the free Azure plan and cause it to shut down for hours or days. If you end up needing a paid tier, the $7/mo Heroku plan is also much cheaper than the first paid tier of Azure.  Currently, the only added benefit to choosing the $7/mo Heroku plan vs the free Heroku plan is a section showing site use metrics for performance (such as response time).  This has limited benefit to the average OpenAPS user.  **In short, Heroku is the free and OpenAPS-friendly option for NS hosting.**
+* If you plan to use Nightscout with OpenAPS, we recommend using Heroku, as OpenAPS can reach the usage limits of the free Azure plan and cause it to shut down for hours or days. If you end up needing a paid tier, the /mo Heroku plan is also much cheaper than the first paid tier of Azure.  Currently, the only added benefit to choosing the /mo Heroku plan vs the free Heroku plan is a section showing site use metrics for performance (such as response time).  This has limited benefit to the average OpenAPS user.  **In short, Heroku is the free and OpenAPS-friendly option for NS hosting.**
 
-* Create an account at [Heroku](https://www.heroku.com) and choose the Primary Development Language to be Node.js when you create your account.  You’re going to use a free account, but you will still need to enter credit card information for your account setup before the app will deploy.  You'll need to confirm your Heroku account by clicking a link sent via email.
+* Create an account at [Heroku](https://www.heroku.com) and choose the Primary Development Language to be Node.js when you create your account.  You’re going to use a free account, but **you will still need to enter credit card information for your account setup before the app will deploy**.  You'll need to confirm your Heroku account by clicking a link sent via email.
 
 ![Heroku signup example](../Images/nightscout/heroku_signup.jpg)
 
@@ -113,15 +113,15 @@ your data, customized watchfaces with your OpenAPS data, and integration with IF
 </tr>
 <tr>
 <th>BRIDGE_USER_NAME</th>
-<td>Enter your Dexcom Share Account login name.  This should be the same account name used in the Share2 or G5 Mobile app.</td>
+<td>For Dexcom users only:Enter your Dexcom Share Account login name.  This should be the same account name used in the Share2 or G5 Mobile app.</td>
 </tr>
 <tr>
 <th>BRIDGE_PASSWORD</th>
-<td>Enter your Dexcom Share Account password.</td>
+<td>For Dexcom users only:Enter your Dexcom Share Account password.</td>
 </tr>
 <tr>
 <th>BRIDGE_MAX_COUNT</th>
-<td>Default value is 1.  Setting this to 7 will update the last 35 minutes of data.</td>
+<td>For Dexcom users only:Default value is 1.  Setting this to 7 will update the last 35 minutes of data.</td>
 </tr>
 </tbody>
 </table>
